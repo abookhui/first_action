@@ -18,7 +18,8 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    # needs: test
+    #depend_on
+    needs: test
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
